@@ -1,0 +1,10 @@
+## Interface: 120007
+## Title: |cffffe19bMyCustomFrames|r - Charcoal Skin
+## Notes: Charcoal reskin for the Gonkast Preset (MyCustomFrames). Requires MyCustomFrames.
+## Author: Gonkast
+## Version: 1.0
+## RequiredDeps: MyCustomFrames
+## OptionalDeps: Masque
+## IconTexture: Interface\AddOns\MyCustomFrames_Charcoal\Assets\group-finder-eye-orange.tga
+
+Load.lua

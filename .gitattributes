@@ -1,0 +1,12 @@
+# Texturas/binarios: nunca tocar los bytes (sin conversion de fin de linea,
+# sin diff de texto). Este repo es casi todo .tga.
+*.tga binary
+*.blp binary
+*.png binary
+*.jpg binary
+*.ttf binary
+
+# Codigo/texto: normalizar a LF en el repo (Windows los checkoutea como CRLF).
+*.lua text eol=lf
+*.toc text eol=lf
+*.md  text eol=lf

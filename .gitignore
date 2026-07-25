@@ -1,0 +1,24 @@
+# Repo de SKINS de MyCustomFrames.
+#
+# Vive en la carpeta AddOns\ (no en una carpeta propia) porque cada skin tiene
+# que ser su PROPIO addon (`MyCustomFrames_<Skin>`) para que WoW la muestre como
+# sub-elemento con checkbox e icono propio en la lista de AddOns -- WoW lee UN
+# .toc por carpeta, asi que meterlas todas en una sola carpeta perderia eso.
+#
+# Este .gitignore ignora TODO y despues re-incluye SOLO las carpetas de skin.
+# El addon principal (MyCustomFrames) tiene su propio repo aparte y queda
+# ignorado aca a proposito, igual que el resto de tus addons.
+#
+# PARA AGREGAR UNA SKIN NUEVA: crear la carpeta MyCustomFrames_<Skin> y agregar
+# su linea `!/MyCustomFrames_<Skin>/` abajo.
+
+# 1) Ignorar todo lo que hay en AddOns\
+/*
+
+# 2) Re-incluir lo del repo
+!/.gitignore
+!/.gitattributes
+!/README.md
+
+# 3) Skins (una linea por skin)
+!/MyCustomFrames_Charcoal/
