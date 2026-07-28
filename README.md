@@ -48,6 +48,14 @@ skin *instead of* MyCustomFrames does nothing.
 | Charcoal | `MyCustomFrames_Charcoal\` |
 | Murloc | `MyCustomFrames_Murloc\` |
 
+### Charcoal
+
+![Charcoal skin](Screenshots/charcoal.jpg)
+
+### Murloc
+
+![Murloc skin](Screenshots/murloc.jpg)
+
 ## Repository layout
 
 This repo is versioned **from the `Interface\AddOns\` folder itself**, with a `.gitignore` that

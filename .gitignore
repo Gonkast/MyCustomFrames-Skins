@@ -19,6 +19,9 @@
 !/.gitignore
 !/.gitattributes
 !/README.md
+# Capturas para el README. Hace falta la linea porque el `/*` de arriba ignora
+# todo -- sin esto la carpeta se ignora en silencio y las imagenes nunca suben.
+!/Screenshots/
 
 # 3) Skins (una linea por skin)
 !/MyCustomFrames_Charcoal/
