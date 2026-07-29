@@ -61,8 +61,6 @@ skin *instead of* MyCustomFrames does nothing.
 
 ### Zandalari
 
-Gold and jade Zandalari trim across the frames, minimap and game menu.
-
 ![Zandalari skin](Screenshots/zandalari.jpg)
 
 ## Repository layout
