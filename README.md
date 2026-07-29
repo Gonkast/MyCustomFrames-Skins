@@ -24,6 +24,14 @@ AddOns list (with the skin's own icon) — you can leave the ones you don't use 
 | Murloc | `MyCustomFrames_Murloc\` |
 | Zandalari | `MyCustomFrames_Zandalari\` |
 
+## Previews
+
+### Zandalari
+
+Gold and jade Zandalari trim across the frames, minimap and game menu.
+
+![The Zandalari skin](Images/zandalari.jpg)
+
 ## Repository layout
 
 This repo is versioned **from the `Interface\AddOns\` folder itself**, with a `.gitignore` that
@@ -44,6 +52,11 @@ Your other addons (including MyCustomFrames itself, which has its own repo) are 
    - `SKIN_NAME = "<Skin>"`
 4. Add `!/MyCustomFrames_<Skin>/` to `.gitignore`.
 5. Replace the textures in its `Assets\` folder.
+6. Add it to the table above, and drop a screenshot in `Images\` with a row under Previews.
+
+Note that only `MasqueSkin\actionbutton-border.tga` is skin-specific — the mask, backdrop, glow
+and pushed textures are shared across all skins, so copying them across is intended, not an
+oversight.
 
 ## What a skin must contain
 
