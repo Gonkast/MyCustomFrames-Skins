@@ -1,0 +1,10 @@
+## Interface: 120007
+## Title: |cffffe19bMyCustomFrames|r - Zandalari Skin
+## Notes: Zandalari reskin for the Gonkast Preset (MyCustomFrames). Requires MyCustomFrames.
+## Author: Gonkast
+## Version: 1.0
+## RequiredDeps: MyCustomFrames
+## OptionalDeps: Masque
+## IconTexture: Interface\AddOns\MyCustomFrames_Zandalari\Assets\group-finder-eye-orange.tga
+
+Load.lua

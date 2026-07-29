@@ -22,6 +22,7 @@ AddOns list (with the skin's own icon) — you can leave the ones you don't use 
 |---|---|
 | Charcoal | `MyCustomFrames_Charcoal\` |
 | Murloc | `MyCustomFrames_Murloc\` |
+| Zandalari | `MyCustomFrames_Zandalari\` |
 
 ## Repository layout
 
