@@ -19,10 +19,9 @@
 !/.gitignore
 !/.gitattributes
 !/README.md
-# Capturas de cada skin para el README. Va explicita porque la regla `/*` de
-# arriba ignora TODA carpeta que no se re-incluya aca -- sin esta linea la
-# carpeta existe en disco pero git no la ve, y el README queda con imagenes rotas.
-!/Images/
+# Capturas para el README. Hace falta la linea porque el `/*` de arriba ignora
+# todo -- sin esto la carpeta se ignora en silencio y las imagenes nunca suben.
+!/Screenshots/
 
 # 3) Skins (una linea por skin)
 !/MyCustomFrames_Charcoal/

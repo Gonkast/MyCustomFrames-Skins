@@ -10,11 +10,36 @@ for World of Warcraft Midnight). All skins live in this single repository instea
 
 ## Installation
 
-Copy the `MyCustomFrames_<Skin>` folders you want into `Interface\AddOns\`, then pick one in-game
-from **MyCustomFrames' options panel → Skins**.
+> **The single most common mistake:** copying the downloaded folder itself. Don't — you have to
+> copy the skin folders that are *inside* it. See step 3.
 
-Each skin is its own addon, so it shows up as a toggleable sub-entry under MyCustomFrames in the
-AddOns list (with the skin's own icon) — you can leave the ones you don't use disabled.
+1. Install **[MyCustomFrames](https://github.com/Gonkast/MyCustomFrames)** first. A skin is not a
+   standalone addon; without it, nothing shows up in your AddOns list at all.
+2. **Code → Download ZIP** above, then extract it. You'll get a folder called
+   `MyCustomFrames-Skins-main`.
+3. Open that folder. Inside are the skin folders (`MyCustomFrames_Charcoal`,
+   `MyCustomFrames_Murloc`, …). Copy **those** into
+   `World of Warcraft\_retail_\Interface\AddOns\` — *not* `MyCustomFrames-Skins-main` itself,
+   and not the `README.md`. Copy as many or as few as you want.
+4. **Don't rename them.** Each folder name has to match the `.toc` inside it exactly, or WoW
+   ignores it.
+5. Restart WoW (or reload the AddOns list at the character screen).
+6. Log in and pick one from **MyCustomFrames' options panel → Skins**.
+
+When it's right, `Interface\AddOns\` looks like this:
+
+```
+Interface\AddOns\
+├── MyCustomFrames\             <- the main addon (required)
+├── MyCustomFrames_Charcoal\    <- a skin
+└── MyCustomFrames_Murloc\      <- another skin
+```
+
+Each skin is its own addon, so it appears as a toggleable sub-entry under MyCustomFrames in the
+AddOns list, with the skin's own icon — leave the ones you don't use disabled.
+
+**A skin folder is not a replacement for the main addon.** It only supplies textures; installing a
+skin *instead of* MyCustomFrames does nothing.
 
 ## Included skins
 
@@ -26,11 +51,19 @@ AddOns list (with the skin's own icon) — you can leave the ones you don't use 
 
 ## Previews
 
+### Charcoal
+
+![Charcoal skin](Screenshots/charcoal.jpg)
+
+### Murloc
+
+![Murloc skin](Screenshots/murloc.jpg)
+
 ### Zandalari
 
 Gold and jade Zandalari trim across the frames, minimap and game menu.
 
-![The Zandalari skin](Images/zandalari.jpg)
+![Zandalari skin](Screenshots/zandalari.jpg)
 
 ## Repository layout
 
@@ -41,7 +74,7 @@ and icon in the AddOns list — they can't be subfolders of a single container a
 
 Your other addons (including MyCustomFrames itself, which has its own repo) are ignored here.
 
-## Adding a new skin
+## Creating a new skin
 
 1. Copy `MyCustomFrames_Charcoal\` and rename it to `MyCustomFrames_<Skin>`.
 2. Rename the `.toc` inside to match the folder name exactly, and update its `## Title` and
@@ -52,7 +85,7 @@ Your other addons (including MyCustomFrames itself, which has its own repo) are 
    - `SKIN_NAME = "<Skin>"`
 4. Add `!/MyCustomFrames_<Skin>/` to `.gitignore`.
 5. Replace the textures in its `Assets\` folder.
-6. Add it to the table above, and drop a screenshot in `Images\` with a row under Previews.
+6. Add it to the table above, and drop a screenshot in `Screenshots\` with a row under Previews.
 
 Note that only `MasqueSkin\actionbutton-border.tga` is skin-specific — the mask, backdrop, glow
 and pushed textures are shared across all skins, so copying them across is intended, not an
